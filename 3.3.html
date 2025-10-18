@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 01. Escreva um programa que pede o raio de um círculo, e em seguida exiba
+o perímetro e área do círculo.
+área = pi(3,14) * raio**2 
+Perímetro = 2 * pi(3,14) * raio-->
+
+    <form action="">
+        Digite o valor do raio do círculo: <br/>
+        <input type="number" id="raio"/>
+        <br/><br/>
+        <button type="button" onclick="calcular()"> Calcular </button>
+    </form>
+    <div id="resposta"></div>
+
+    <script>
+        function calcular() {
+            //obter o valor do raio
+            var raioj = document.getElementById("raio").value;
+            //converteu para real
+            raioj = parseFloat(raioj);
+            //calcular área e perímetro do círculo
+            var pi = 3.14159;
+            var areac = pi * raioj * Math.pow(raioj,2);
+            var perimetro = 2 * pi * raioj;
+            //saída
+
+            document.getElementById("resposta").innerHTML = 
+            "Área : "+ areac + "<br/>" + "Perímetro" + perimetro;
+
+
+
+            //alert(raioj);
+
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário com desconto</title>
+</head>
+<body>
+    <!-- 6. Faça um programa onde o usuário digitará o seu salário e o programa escreverá, na tela, 
+     o valor que será descontado de valetransporte (6%), de INSS (no momento descontar 8%) e quanto sobrará de salário.-->
+     <script>
+        //entrada
+    let salario = parseFloat(prompt('Digite o seu salário '));
+        //processamento
+        let desconto1 = (salario * 6 / 100);
+        let desconto2 = (salario * 8 / 100);
+        let descontototal = desconto1 + desconto2;
+
+        let novosalario = salario - descontototal
+
+        //saída
+        var resultado = "Desconto do VR : " + desconto1 + "\n" +
+        "Desconto do INSS : " + desconto2 + "\n" +
+        "Desconto total : " + descontototal + "\n" +
+        "Salário com desconto : " + novosalario + "\n"
+
+        document.writeln(resultado);
+     </script>
+    
+</body>
+</html>

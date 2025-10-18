@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro Novo</title>
+</head>
+<body>
+    <!-- 04. Um novo modelo de carro, super econômico foi lançado.
+Ele faz 20 km com 1 litro de combustível.
+Cada litro de combustível custa R$ 5,00.
+Faça um programa que pergunte ao usuário quanto de dinheiro ele tem e em
+seguida diga quantos litros de combustível ele pode comprar e quantos 
+kilometros o carro consegue andar com este tanto de combustível.-->
+<script>
+    let valor = parseFloat(prompt('Qual valor (R$) disponível '));
+    let km = 20
+    let valorlitro = 5
+        //processamento 
+        let comb = valor / valorlitro;
+        let kmpercurso = comb * km;
+        
+        //saída
+        var resultado = "Quantidade de combustível disponível com este valor : " + comb + "\n" +
+        "Quantidade de km para percorrer com essa quantidade de combustível : " + kmpercurso + "\n"
+        
+        document.writeln(resultado);
+
+        //Já tinha feita na aula, vou fazer em casa com tela
+</script>
+    
+</body>
+</html>

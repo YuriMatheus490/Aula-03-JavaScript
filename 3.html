@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área e perímetro</title>
+</head>
+<body>
+    <!-- 01. Escreva um programa que pede o raio de um círculo, e em seguida exiba
+o perímetro e área do círculo.
+área = pi(3,14) * raio**2 
+Perímetro = 2 * pi(3,14) * raio-->
+<script>
+    //entrada
+    let raio = parseFloat(prompt('Digite o raio do círculo '));
+        //processamento
+        //let area = 3.14 * (raio**2) 
+        let area = Math.PI * Math.pow(raio,2);
+        let perimetro = 2 * Math.PI * raio;
+
+        //saída
+        var resultado = "Área : " + area + "\n" +
+        "perimetro : " + perimetro + "\n" 
+
+        document.writeln(resultado);
+        document.writeln(resultado.tofixed(2));
+        document.writeln("Arredondando pra cima" +Math.ceil(resultado));
+        document.writeln("Arredondando pra baixo" +Math.floor(resultado));
+
+
+</script>
+    
+</body>
+</html>
